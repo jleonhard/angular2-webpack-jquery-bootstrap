@@ -10,7 +10,7 @@ import { Project } from './project';
 
 @Injectable()
 export class ProjectService {
-  private projectsUrl = 'api/heroes';  // URL to web api
+  private projectsUrl = 'api/projects';  // URL to web api
   constructor(private http: Http) { }
 
   public getProjects(): Promise<Project[]> {
