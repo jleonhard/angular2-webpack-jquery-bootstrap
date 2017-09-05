@@ -10,6 +10,8 @@ import { ActivatedRoute } from '@angular/router';
   `],
   template: `
     <h1>About</h1>
+    <h2>added Bootstrap and Jquery support to the Angular Webpack starter Kit from AngularClass</h2>
+    <hr>
     <div>
       For hot module reloading run
       <pre>npm run start:hmr</pre>

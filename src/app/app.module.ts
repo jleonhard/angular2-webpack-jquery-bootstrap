@@ -61,6 +61,8 @@ type StoreType = {
     AppComponent,
     AboutComponent,
     HomeComponent,
+    ProjectsComponent,
+    ProjectDetailComponent,
     NoContentComponent,
     XLargeDirective
   ],
@@ -76,18 +78,15 @@ type StoreType = {
     RouterModule.forRoot(ROUTES, {
       useHash: Boolean(history.pushState) === false,
       preloadingStrategy: PreloadAllModules
-    })/**,
-    ProjectsComponent,
-    ProjectDetailComponent,
-    ProjectDiamondsComponent
-     */
+    })
   ],
   /**
    * Expose our Services and Providers into Angular's dependency injection.
    */
   providers: [
     ENV_PROVIDERS,
-    APP_PROVIDERS
+    APP_PROVIDERS,
+    ProjectService
   ]
 })
 export class AppModule {

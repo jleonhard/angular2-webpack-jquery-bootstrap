@@ -46,7 +46,7 @@ export class HomeComponent implements OnInit {
 
   public ngOnInit() {
     console.log('hello `Home` component');
-    $('.wtf').html("wos isn des fia a scheiss?");
+    $('.wtf').html("test jQuery output");
     /**
      * this.title.getData().subscribe(data => this.data = data);
      */

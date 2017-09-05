@@ -37,7 +37,7 @@ export class ProjectsComponent implements OnInit {
     this.gotoDetail();
   }
   public gotoDetail(): void {
-    this.router.navigate(['/detail', this.selectedProject.id]);
+    this.router.navigate(['/projects/detail', this.selectedProject.id]);
   }
   public ngOnInit(): void {
     this.getProjects();

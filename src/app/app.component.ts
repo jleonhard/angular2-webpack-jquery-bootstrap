@@ -23,11 +23,11 @@ import { AppState } from './app.service';
         <nav>
           <a [routerLink]=" ['./'] "
             routerLinkActive="active" [routerLinkActiveOptions]= "{exact: true}">
-            Index
-          </a>
-          <a [routerLink]=" ['./home'] "
-            routerLinkActive="active" [routerLinkActiveOptions]= "{exact: true}">
             Home
+          </a>
+          <a [routerLink]=" ['./projects'] "
+            routerLinkActive="active" [routerLinkActiveOptions]= "{exact: true}">
+            Projects
           </a>
           <a [routerLink]=" ['./detail'] "
             routerLinkActive="active" [routerLinkActiveOptions]= "{exact: true}">
