@@ -32,9 +32,6 @@ import { NoContentComponent } from './no-content';
 import { XLargeDirective } from './home/x-large';
 import { ProjectDetailComponent } from './project/project-detail.component';
 import { ProjectsComponent } from './project/projects.component';
-import { ProjectDiamondsComponent } from './project/project-diamonds.component';
-import { InMemoryWebApiModule } from 'angular-in-memory-web-api';
-import { InMemoryDataService } from '././in-memory-data.service';
 import { ProjectService } from './project/project.service';
 
 import '../styles/styles.scss';
@@ -74,7 +71,6 @@ type StoreType = {
     BrowserAnimationsModule,
     FormsModule,
     HttpModule,
-    InMemoryWebApiModule.forRoot(InMemoryDataService),
     RouterModule.forRoot(ROUTES, {
       useHash: Boolean(history.pushState) === false,
       preloadingStrategy: PreloadAllModules

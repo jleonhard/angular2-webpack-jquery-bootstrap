@@ -28,6 +28,7 @@
       "node",
       "source-map",
       "uglify-js",
+      "jquery",
       "webpack"
     ]
   },
