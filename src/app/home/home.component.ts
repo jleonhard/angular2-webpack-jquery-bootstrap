@@ -6,6 +6,8 @@ import {
 import { AppState } from '../app.service';
 import { Title } from './title';
 import 'jquery';
+import { ImageShowComponent }
+from '../custom-components/content-slider/content-slider-config.component';
 import 'bootstrap-loader';
 import { XLargeDirective } from './x-large';
 
@@ -20,8 +22,10 @@ import { XLargeDirective } from './x-large';
    * We need to tell Angular's Dependency Injection which providers are in our app.
    */
   providers: [
-    Title
-  ],
+    Title,
+      ImageShowComponent
+  ]
+  ,
   /**
    * Our list of styles in our component. We may add more to compose many styles together.
    */
@@ -40,6 +44,7 @@ export class HomeComponent implements OnInit {
    * TypeScript public modifiers
    */
   constructor(
+    private imageShowComponent: ImageShowComponent,
     public appState: AppState,
     public title: Title
   ) {}

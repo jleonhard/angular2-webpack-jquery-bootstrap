@@ -33,7 +33,16 @@ import { XLargeDirective } from './home/x-large';
 import { ProjectDetailComponent } from './project/project-detail.component';
 import { ProjectsComponent } from './project/projects.component';
 import { ProjectService } from './project/project.service';
-
+import { ImageShowComponent }
+from './custom-components/content-slider/content-slider-config.component';
+import { ContentSliderComponent }
+from './custom-components/content-slider/content-slider.component';
+import { PrintslideComponent }
+from './custom-components/content-slider/print-slide.component';
+import { SlideAjaxComponent }
+from './custom-components/content-slider/slider-ajax.component';
+import { SafeHtmlPipe }
+from './custom-components/content-slider/slider-content-pipe';
 import '../styles/styles.scss';
 import '../styles/headings.css';
 
@@ -61,6 +70,11 @@ type StoreType = {
     ProjectsComponent,
     ProjectDetailComponent,
     NoContentComponent,
+    ImageShowComponent,
+    ContentSliderComponent,
+    PrintslideComponent,
+    SlideAjaxComponent,
+    SafeHtmlPipe,
     XLargeDirective
   ],
   /**

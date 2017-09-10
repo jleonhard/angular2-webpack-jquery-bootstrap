@@ -7,7 +7,8 @@ import {
   ViewEncapsulation
 } from '@angular/core';
 import { AppState } from './app.service';
-
+import { ImageShowComponent }
+from './custom-components/content-slider/content-slider-config.component';
 /**
  * App Component
  * Top Level Component
